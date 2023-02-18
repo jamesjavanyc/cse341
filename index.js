@@ -1,6 +1,5 @@
 const express = require("express");
-const dotenv = require("dotenv");
-dotenv.config();
+const port = process.env.SERVER_PORT || 5000;
 
 const app = express()
 
@@ -8,6 +7,6 @@ const nameRoute = require("./routes/name-route")
 
 app.use(nameRoute)
 
-app.listen(process.env.SERVER_PORT, () => {
-    console.log("Server on 5000 port is running.")
+app.listen(port, () => {
+    console.log(`Server on ${port} port is running.`)
 })
