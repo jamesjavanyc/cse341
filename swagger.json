@@ -5,10 +5,10 @@
         "description": "Project API Doc",
         "version": "1.0.0"
     },
-    "host": "localhost:5000",
+    "host": "cse341-85iv.onrender.com",
     "basePath": "/",
     "schemes": [
-        "http"
+        "https"
     ],
     "paths": {
         "/contacts/": {
