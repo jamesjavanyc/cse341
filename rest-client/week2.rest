@@ -1,0 +1,69 @@
+###
+GET http://localhost:5000/contacts HTTP/1.1
+###
+POST http://localhost:5000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testname",
+    "lastName": "testname",
+    "email":  "testemail@test.com",
+    "favoriteColor":  "testcolor",
+    "birthday": "16/11/1032"
+}
+### 
+PUT http://localhost:5000/contacts/63f2769d249eab69f7942767 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testname1",
+    "lastName": "testname1",
+    "email":  "testemail@test1.com",
+    "favoriteColor":  "testcolor1",
+    "birthday": "16/11/1986"
+}
+### 
+DELETE http://localhost:5000/contacts/63f2769d249eab69f7942767 HTTP/1.1
+
+
+###
+GET http://localhost:5000/contacts HTTP/1.1
+
+
+
+
+
+
+
+
+
+###
+GET https://cse341-85iv.onrender.com/contacts HTTP/1.1
+###
+POST https://cse341-85iv.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testname",
+    "lastName": "testname",
+    "email":  "testemail@test.com",
+    "favoriteColor":  "testcolor",
+    "birthday": "16/11/1032"
+}
+### 
+PUT https://cse341-85iv.onrender.com/contacts/63f2769d249eab69f7942767 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testname1",
+    "lastName": "testname1",
+    "email":  "testemail@test1.com",
+    "favoriteColor":  "testcolor1",
+    "birthday": "16/11/1986"
+}
+### 
+DELETE https://cse341-85iv.onrender.com/contacts/63f2769d249eab69f7942767 HTTP/1.1
+
+
+###
+GET https://cse341-85iv.onrender.com/contacts HTTP/1.1
