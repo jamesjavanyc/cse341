@@ -26,7 +26,12 @@ const getDb = () => {
     return _db;
 };
 
+const getDatabase = (collection) => {
+    return getDb().db(collection);
+};
+
 module.exports = {
     initDb,
     getDb,
+    getDatabase
 };
