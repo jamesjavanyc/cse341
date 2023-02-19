@@ -1,3 +1,7 @@
+GET http://localhost:5000 HTTP/1.1
+###
+GET https://cse341-85iv.onrender.com HTTP/1.1
+###
 GET http://localhost:5000/contacts HTTP/1.1
 ### 
 GET http://localhost:5000/contacts/63f1292bd11a0e1eb0314817 HTTP/1.1
