@@ -67,3 +67,15 @@ DELETE https://cse341-85iv.onrender.com/contacts/63f2932231c7e69f01e17540 HTTP/1
 
 ###
 GET https://cse341-85iv.onrender.com/contacts HTTP/1.1
+
+###
+PUT http://localhost:5000/contacts/123 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "testname1",
+    "lastName": "testname1",
+    "email":  "testemail@test1.com",
+    "favoriteColor":  "testcolor1",
+    "birthday": "16/11/1986"
+}

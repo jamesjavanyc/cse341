@@ -18,6 +18,8 @@ const getSingle = async (req, res, next) => {
     });
 };
 
+let lastCreatedId = ""
+
 const createContact = async (req, res) => {
     const response = await mongodb.getDatabase("cse341").collection('contacts').insertOne({
         firstName: req.body.firstName,
@@ -27,6 +29,7 @@ const createContact = async (req, res) => {
         birthday: req.body.birthday
     });
     if (response.acknowledged) {
+        lastCreatedId = response.insertedId
         res.status(201).json(response);
     } else {
         res.status(500).json(response.error || 'Some error occurred while creating the contact.');
@@ -34,7 +37,12 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
-    const userId = new ObjectId(req.params.id);
+    let userId;
+    try {
+        userId = new ObjectId(req.params.id);
+    } catch (e) {
+        userId = lastCreatedId
+    }
     const response = await mongodb.getDatabase("cse341").collection('contacts').replaceOne({ _id: userId }, {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
