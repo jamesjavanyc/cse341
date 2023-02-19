@@ -2,7 +2,6 @@ const express = require("express");
 const port = process.env.SERVER_PORT || 5000;
 const mongodb = require('./db/connect');
 const bodyParser = require('body-parser');
-
 const app = express()
 
 app

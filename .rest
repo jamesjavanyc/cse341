@@ -1,3 +1,15 @@
 GET http://localhost:5000/contacts HTTP/1.1
 ### 
 GET http://localhost:5000/contacts/63f1292bd11a0e1eb0314817 HTTP/1.1
+### 
+GET http://localhost:5000/contacts/63f12939d11a0e1eb031770e HTTP/1.1
+### 
+GET http://localhost:5000/contacts/63f12946d11a0e1eb031a50f HTTP/1.1
+###
+GET https://cse341-85iv.onrender.com/contacts HTTP/1.1
+### 
+GET https://cse341-85iv.onrender.com/contacts/63f1292bd11a0e1eb0314817 HTTP/1.1
+### 
+GET https://cse341-85iv.onrender.com/contacts/63f12939d11a0e1eb031770e HTTP/1.1
+### 
+GET https://cse341-85iv.onrender.com/contacts/63f12946d11a0e1eb031a50f HTTP/1.1
