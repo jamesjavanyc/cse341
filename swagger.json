@@ -5,8 +5,8 @@
         "description": "Project API Doc",
         "version": "1.0.0"
     },
-    "host": "https://cse341-85iv.onrender.com/",
-    "basePath": "/",
+    "host": "https://cse341-85iv.onrender.com",
+    "basePath": "",
     "schemes": [
         "https"
     ],

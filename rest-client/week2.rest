@@ -12,7 +12,7 @@ content-type: application/json
     "birthday": "16/11/1032"
 }
 ### 
-PUT http://localhost:5000/contacts/63f292866f699e0a9ef63634 HTTP/1.1
+PUT http://localhost:5000/contacts/63f2b764df9e1f2079f43f9a HTTP/1.1
 content-type: application/json
 
 {
@@ -23,7 +23,7 @@ content-type: application/json
     "birthday": "16/11/1986"
 }
 ### 
-DELETE http://localhost:5000/contacts/63f292866f699e0a9ef63634 HTTP/1.1
+DELETE http://localhost:5000/contacts/63f2b764df9e1f2079f43f9a HTTP/1.1
 
 
 ###
