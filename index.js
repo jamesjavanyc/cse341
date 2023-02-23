@@ -8,8 +8,8 @@ const app = express()
 app.use(cors())
 
 app
-    .use(bodyParser.json())
     .use(cors())
+    .use(bodyParser.json())
     .use('/', require('./routes'))
     .use(function (err, req, res, next) {
         if (err) {
